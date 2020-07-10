@@ -3,3 +3,8 @@ body {
 	background: #f7f7f7 url(../img/top.jpg) center top/cover no-repeat;
   background-attachment: fixed;
 }
+
+.img-title {
+	width:500px;  /*表示する横幅(縦幅と同じ値)*/
+	height:500px;  /*表示する縦幅(横幅と同じ値)*/
+}
