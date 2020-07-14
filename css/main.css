@@ -5,6 +5,6 @@ body {
 }
 
 .img-title {
-	width:500px;  /*表示する横幅(縦幅と同じ値)*/
-	height:500px;  /*表示する縦幅(横幅と同じ値)*/
+	width:500px;
+	height:500px;
 }
