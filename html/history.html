@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css">
-  <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/jquery.justified.css">
+  <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="../js/jquery.justified.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <title>contact</title>
 </head>
@@ -23,5 +25,33 @@
   </div>
   </nav>
 
+  <div class="image-container"></div>
+
+  <script>
+    $(document).ready(function(){
+      var photos = {
+          "name": "山田",
+          "age": 21
+      }
+
+      $('.image-container').empty().justifiedImages({
+          images : photos,
+          rowHeight: 200,
+          maxRowHeight: 400,
+          thumbnailPath: function(photo, width, height){
+              var purl = photo.url_s;
+              if( photo.url_n && (width > photo.width_s * 1.2 || height > photo.height_s * 1.2) ) purl = photo.url_n;
+              if( photo.url_m && (width > photo.width_n * 1.2 || height > photo.height_n * 1.2) ) purl = photo.url_m;
+              if( photo.url_z && (width > photo.width_m * 1.2 || height > photo.height_m * 1.2) ) purl = photo.url_z;
+              if( photo.url_l && (width > photo.width_z * 1.2 || height > photo.height_z * 1.2) ) purl = photo.url_l;
+              return purl;
+          },
+          getSize: function(photo){
+              return {width: photo.width_s, height: photo.height_s};
+          },
+          margin: 1
+      });
+    }
+  </script>
 </body>
 </html>
