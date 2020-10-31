@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <title>contact</title>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container">
+    <div class="container">
       <a class="navbar-brand" href="#">三保音楽村</a>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><a class="nav-link" href="../index.html">index</a></li>
@@ -23,7 +25,7 @@
         <li class="nav-item"><a class="nav-link" href="./other.html">other</a></li>
         <li class="nav-item"><a class="nav-link" href="./contact.html">contact</a></li>
       </ul>
-  </div>
+    </div>
   </nav>
 
   <div class="container border-bottom border-dark">
@@ -34,39 +36,227 @@
     <div id="image-container"></div>
   </div>
   <script>
-  $(function(){
+    $(function() {
 
-      var photos = { "photos": { "page": 1, "pages": 5, "perpage": 100, "total": "500",
-       "photo": [{ "id": "50527455051", "owner": "98635224@N07", "secret": "69afaac791", "server": "65535", "farm": 66, "title": "Bec jaune - 0160123-30744", "ispublic": 1, "isfriend": 0, "isfamily": 0, "url_t": "..\/img\/1.jpg", "height_t": 67, "width_t": 100, "url_s": "..\/img\/1.jpg", "height_s": "160", "width_s": "240", "url_q": "..\/img\/1.jpg", "height_q": "150", "width_q": "150", "url_m": "..\/img\/1.jpg", "height_m": "334", "width_m": "500", "url_n": "..\/img\/1.jpg", "height_n": "213", "width_n": "320", "url_z": "..\/img\/1.jpg", "height_z": "427", "width_z": "640", "url_c": "..\/img\/1.jpg", "height_c": "534", "width_c": "800", "url_l": "..\/img\/1.jpg", "height_l": "683", "width_l": "1024" },
-        { "id": "50526205292", "owner": "33506024@N02", "secret": "7bfd2c7572", "server": "65535", "farm": 66, "title": "exquisite withdrawal I", "ispublic": 1, "isfriend": 0, "isfamily": 0, "url_t": "..\/img\/2.jpg", "height_t": 100, "width_t": 100, "url_s": "..\/img\/2.jpg", "height_s": "240", "width_s": "240", "url_q": "..\/img\/2.jpg", "height_q": "150", "width_q": "150", "url_m": "..\/img\/2.jpg", "height_m": "500", "width_m": "500", "url_n": "..\/img\/2.jpg", "height_n": "320", "width_n": "320", "url_z": "..\/img\/2.jpg", "height_z": "640", "width_z": "640" },
-        { "id": "50527455051", "owner": "98635224@N07", "secret": "69afaac791", "server": "65535", "farm": 66, "title": "Bec jaune - 0160123-30744", "ispublic": 1, "isfriend": 0, "isfamily": 0, "url_t": "..\/img\/4.jpg", "height_t": 67, "width_t": 100, "url_s": "..\/img\/4.jpg", "height_s": "160", "width_s": "240", "url_q": "..\/img\/4.jpg", "height_q": "150", "width_q": "150", "url_m": "..\/img\/4.jpg", "height_m": "334", "width_m": "500", "url_n": "..\/img\/4.jpg", "height_n": "213", "width_n": "320", "url_z": "..\/img\/4.jpg", "height_z": "427", "width_z": "640", "url_c": "..\/img\/4.jpg", "height_c": "534", "width_c": "800", "url_l": "..\/img\/4.jpg", "height_l": "683", "width_l": "1024" },
-        { "id": "50527455051", "owner": "98635224@N07", "secret": "69afaac791", "server": "65535", "farm": 66, "title": "Bec jaune - 0160123-30744", "ispublic": 1, "isfriend": 0, "isfamily": 0, "url_t": "..\/img\/5.jpg", "height_t": 67, "width_t": 100, "url_s": "..\/img\/5.jpg", "height_s": "160", "width_s": "240", "url_q": "..\/img\/5.jpg", "height_q": "150", "width_q": "150", "url_m": "..\/img\/5.jpg", "height_m": "334", "width_m": "500", "url_n": "..\/img\/5.jpg", "height_n": "213", "width_n": "320", "url_z": "..\/img\/5.jpg", "height_z": "427", "width_z": "640", "url_c": "..\/img\/5.jpg", "height_c": "534", "width_c": "800", "url_l": "..\/img\/5.jpg", "height_l": "683", "width_l": "1024" },
-        { "id": "50527455051", "owner": "98635224@N07", "secret": "69afaac791", "server": "65535", "farm": 66, "title": "Bec jaune - 0160123-30744", "ispublic": 1, "isfriend": 0, "isfamily": 0, "url_t": "..\/img\/5.jpg", "height_t": 67, "width_t": 100, "url_s": "..\/img\/5.jpg", "height_s": "160", "width_s": "240", "url_q": "..\/img\/5.jpg", "height_q": "150", "width_q": "150", "url_m": "..\/img\/5.jpg", "height_m": "334", "width_m": "500", "url_n": "..\/img\/5.jpg", "height_n": "213", "width_n": "320", "url_z": "..\/img\/5.jpg", "height_z": "427", "width_z": "640", "url_c": "..\/img\/5.jpg", "height_c": "534", "width_c": "800", "url_l": "..\/img\/5.jpg", "height_l": "683", "width_l": "1024" },
-        { "id": "50527455051", "owner": "98635224@N07", "secret": "69afaac791", "server": "65535", "farm": 66, "title": "Bec jaune - 0160123-30744", "ispublic": 1, "isfriend": 0, "isfamily": 0, "url_t": "..\/img\/5.jpg", "height_t": 67, "width_t": 100, "url_s": "..\/img\/5.jpg", "height_s": "160", "width_s": "240", "url_q": "..\/img\/5.jpg", "height_q": "150", "width_q": "150", "url_m": "..\/img\/5.jpg", "height_m": "334", "width_m": "500", "url_n": "..\/img\/5.jpg", "height_n": "213", "width_n": "320", "url_z": "..\/img\/5.jpg", "height_z": "427", "width_z": "640", "url_c": "..\/img\/5.jpg", "height_c": "534", "width_c": "800", "url_l": "..\/img\/5.jpg", "height_l": "683", "width_l": "1024" },
-        { "id": "50527455051", "owner": "98635224@N07", "secret": "69afaac791", "server": "65535", "farm": 66, "title": "Bec jaune - 0160123-30744", "ispublic": 1, "isfriend": 0, "isfamily": 0, "url_t": "..\/img\/5.jpg", "height_t": 67, "width_t": 100, "url_s": "..\/img\/5.jpg", "height_s": "160", "width_s": "240", "url_q": "..\/img\/5.jpg", "height_q": "150", "width_q": "150", "url_m": "..\/img\/5.jpg", "height_m": "334", "width_m": "500", "url_n": "..\/img\/5.jpg", "height_n": "213", "width_n": "320", "url_z": "..\/img\/5.jpg", "height_z": "427", "width_z": "640", "url_c": "..\/img\/5.jpg", "height_c": "534", "width_c": "800", "url_l": "..\/img\/5.jpg", "height_l": "683", "width_l": "1024" }]
-        }, "stat": "ok" }
+      var photos = {
+        "photos": {
+          "page": 1,
+          "pages": 5,
+          "perpage": 100,
+          "total": "500",
+          "photo": [{
+              "id": "50527455051",
+              "url_t": "..\/img\/1.jpg",
+              "height_t": 67,
+              "width_t": 100,
+              "url_s": "..\/img\/1.jpg",
+              "height_s": "160",
+              "width_s": "240",
+              "url_q": "..\/img\/1.jpg",
+              "height_q": "150",
+              "width_q": "150",
+              "url_m": "..\/img\/1.jpg",
+              "height_m": "334",
+              "width_m": "500",
+              "url_n": "..\/img\/1.jpg",
+              "height_n": "213",
+              "width_n": "320",
+              "url_z": "..\/img\/1.jpg",
+              "height_z": "427",
+              "width_z": "640",
+              "url_c": "..\/img\/1.jpg",
+              "height_c": "534",
+              "width_c": "800",
+              "url_l": "..\/img\/1.jpg",
+              "height_l": "683",
+              "width_l": "1024"
+            },
+            {
+              "id": "50526205292",
+              "url_t": "..\/img\/2.jpg",
+              "height_t": 100,
+              "width_t": 100,
+              "url_s": "..\/img\/2.jpg",
+              "height_s": "240",
+              "width_s": "240",
+              "url_q": "..\/img\/2.jpg",
+              "height_q": "150",
+              "width_q": "150",
+              "url_m": "..\/img\/2.jpg",
+              "height_m": "500",
+              "width_m": "500",
+              "url_n": "..\/img\/2.jpg",
+              "height_n": "320",
+              "width_n": "320",
+              "url_z": "..\/img\/2.jpg",
+              "height_z": "640",
+              "width_z": "640"
+            },
+            {
+              "id": "50527455051",
+              "url_t": "..\/img\/4.jpg",
+              "height_t": 67,
+              "width_t": 100,
+              "url_s": "..\/img\/4.jpg",
+              "height_s": "160",
+              "width_s": "240",
+              "url_q": "..\/img\/4.jpg",
+              "height_q": "150",
+              "width_q": "150",
+              "url_m": "..\/img\/4.jpg",
+              "height_m": "334",
+              "width_m": "500",
+              "url_n": "..\/img\/4.jpg",
+              "height_n": "213",
+              "width_n": "320",
+              "url_z": "..\/img\/4.jpg",
+              "height_z": "427",
+              "width_z": "640",
+              "url_c": "..\/img\/4.jpg",
+              "height_c": "534",
+              "width_c": "800",
+              "url_l": "..\/img\/4.jpg",
+              "height_l": "683",
+              "width_l": "1024"
+            },
+            {
+              "id": "50527455051",
+              "url_t": "..\/img\/5.jpg",
+              "height_t": 67,
+              "width_t": 100,
+              "url_s": "..\/img\/5.jpg",
+              "height_s": "160",
+              "width_s": "240",
+              "url_q": "..\/img\/5.jpg",
+              "height_q": "150",
+              "width_q": "150",
+              "url_m": "..\/img\/5.jpg",
+              "height_m": "334",
+              "width_m": "500",
+              "url_n": "..\/img\/5.jpg",
+              "height_n": "213",
+              "width_n": "320",
+              "url_z": "..\/img\/5.jpg",
+              "height_z": "427",
+              "width_z": "640",
+              "url_c": "..\/img\/5.jpg",
+              "height_c": "534",
+              "width_c": "800",
+              "url_l": "..\/img\/5.jpg",
+              "height_l": "683",
+              "width_l": "1024"
+            },
+            {
+              "id": "50527455051",
+              "url_t": "..\/img\/5.jpg",
+              "height_t": 67,
+              "width_t": 100,
+              "url_s": "..\/img\/5.jpg",
+              "height_s": "160",
+              "width_s": "240",
+              "url_q": "..\/img\/5.jpg",
+              "height_q": "150",
+              "width_q": "150",
+              "url_m": "..\/img\/5.jpg",
+              "height_m": "334",
+              "width_m": "500",
+              "url_n": "..\/img\/5.jpg",
+              "height_n": "213",
+              "width_n": "320",
+              "url_z": "..\/img\/5.jpg",
+              "height_z": "427",
+              "width_z": "640",
+              "url_c": "..\/img\/5.jpg",
+              "height_c": "534",
+              "width_c": "800",
+              "url_l": "..\/img\/5.jpg",
+              "height_l": "683",
+              "width_l": "1024"
+            },
+            {
+              "id": "50527455051",
+              "url_t": "..\/img\/5.jpg",
+              "height_t": 67,
+              "width_t": 100,
+              "url_s": "..\/img\/5.jpg",
+              "height_s": "160",
+              "width_s": "240",
+              "url_q": "..\/img\/5.jpg",
+              "height_q": "150",
+              "width_q": "150",
+              "url_m": "..\/img\/5.jpg",
+              "height_m": "334",
+              "width_m": "500",
+              "url_n": "..\/img\/5.jpg",
+              "height_n": "213",
+              "width_n": "320",
+              "url_z": "..\/img\/5.jpg",
+              "height_z": "427",
+              "width_z": "640",
+              "url_c": "..\/img\/5.jpg",
+              "height_c": "534",
+              "width_c": "800",
+              "url_l": "..\/img\/5.jpg",
+              "height_l": "683",
+              "width_l": "1024"
+            },
+            {
+              "id": "50527455051",
+              "url_t": "..\/img\/5.jpg",
+              "height_t": 67,
+              "width_t": 100,
+              "url_s": "..\/img\/5.jpg",
+              "height_s": "160",
+              "width_s": "240",
+              "url_q": "..\/img\/5.jpg",
+              "height_q": "150",
+              "width_q": "150",
+              "url_m": "..\/img\/5.jpg",
+              "height_m": "334",
+              "width_m": "500",
+              "url_n": "..\/img\/5.jpg",
+              "height_n": "213",
+              "width_n": "320",
+              "url_z": "..\/img\/5.jpg",
+              "height_z": "427",
+              "width_z": "640",
+              "url_c": "..\/img\/5.jpg",
+              "height_c": "534",
+              "width_c": "800",
+              "url_l": "..\/img\/5.jpg",
+              "height_l": "683",
+              "width_l": "1024"
+            }
+          ]
+        },
+        "stat": "ok"
+      }
 
-      var showPhotos = function(photos){
+      var showPhotos = function(photos) {
         $("#image-container").empty().justifiedImages({
-            images : photos,
-            rowHeight: 200,
-            maxRowHeight: 400,
-            thumbnailPath: function(photo, width, height){
-                var purl = photo.url_s;
-                if( photo.url_n && (width > photo.width_s * 1.2 || height > photo.height_s * 1.2) ) purl = photo.url_n;
-                if( photo.url_m && (width > photo.width_n * 1.2 || height > photo.height_n * 1.2) ) purl = photo.url_m;
-                if( photo.url_z && (width > photo.width_m * 1.2 || height > photo.height_m * 1.2) ) purl = photo.url_z;
-                if( photo.url_l && (width > photo.width_z * 1.2 || height > photo.height_z * 1.2) ) purl = photo.url_l;
-                return purl;
-            },
-            getSize: function(photo){
-                return {width: photo.width_s, height: photo.height_s};
-            },
-            margin: 1
+          images: photos,
+          rowHeight: 200,
+          maxRowHeight: 400,
+          thumbnailPath: function(photo, width, height) {
+            var purl = photo.url_s;
+            if (photo.url_n && (width > photo.width_s * 1.2 || height > photo.height_s * 1.2)) purl = photo.url_n;
+            if (photo.url_m && (width > photo.width_n * 1.2 || height > photo.height_n * 1.2)) purl = photo.url_m;
+            if (photo.url_z && (width > photo.width_m * 1.2 || height > photo.height_m * 1.2)) purl = photo.url_z;
+            if (photo.url_l && (width > photo.width_z * 1.2 || height > photo.height_z * 1.2)) purl = photo.url_l;
+            return purl;
+          },
+          getSize: function(photo) {
+            return {
+              width: photo.width_s,
+              height: photo.height_s
+            };
+          },
+          margin: 1
         });
       }
       showPhotos(photos.photos.photo);
     })
   </script>
 </body>
+
 </html>
